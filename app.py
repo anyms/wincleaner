@@ -56,6 +56,7 @@ class App(Frame):
                 self.progress_bar["value"] = round(deleted_files * float(self.cleaner.num_of_files) / 100.0)
 
         self.status_label["text"] = "Cleaning completed!"
+        self.progress_bar["value"] = 100
 
     def __analize(self):
         self.status_label["text"] = self.cleaner.analize()   
